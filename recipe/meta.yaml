@@ -27,6 +27,7 @@ requirements:
     - python >=3.4
     - requests >=2.24.0
     - numpy
+    - aws-xray-sdk <0.96,>=0.93  # for moto backwards-compatibility 
 
 test:
   imports:
