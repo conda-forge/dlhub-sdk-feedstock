@@ -1,0 +1,21 @@
+From fcbd1731b2b4acc889faefca49db011a8045ca19 Mon Sep 17 00:00:00 2001
+From: ascourtas <ascourtas@gmail.com>
+Date: Fri, 26 Aug 2022 16:39:51 -0400
+Subject: [PATCH] update version to 1.0.0 for funcx compat
+
+---
+ dlhub_sdk/version.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/dlhub_sdk/version.py b/dlhub_sdk/version.py
+index 612bd001..dc437382 100644
+--- a/dlhub_sdk/version.py
++++ b/dlhub_sdk/version.py
+@@ -1,6 +1,6 @@
+ # single source of truth for package version,
+ # see https://packaging.python.org/en/latest/single_source_version/
+-__version__ = "0.10.2"
++__version__ = "1.0.0"
+ 
+ # app name to send as part of SDK requests
+ app_name = "DLHub SDK v{}".format(__version__)

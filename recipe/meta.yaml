@@ -8,11 +8,13 @@ package:
 source:
   url: https://github.com/DLHub-Argonne/dlhub_sdk/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 511533f3b2df03c93f4eb165e63665606aee14665a433fe30cd79517762e5a2c
+  patches:
+    - version.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
