@@ -1,5 +1,5 @@
 {% set name = "dlhub-sdk" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,12 @@ package:
 
 source:
   url: https://github.com/DLHub-Argonne/dlhub_sdk/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 511533f3b2df03c93f4eb165e63665606aee14665a433fe30cd79517762e5a2c
-  patches:
-    - version.patch
+  sha256: b7c6fc966064c41d339a8c05c88cc2dfc8146ff334e6480de8eaf420e65bad61
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
