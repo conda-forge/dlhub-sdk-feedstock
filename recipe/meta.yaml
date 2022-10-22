@@ -30,7 +30,7 @@ requirements:
     - aws-xray-sdk <0.96,>=0.93  # for moto backwards-compatibility
     - pytorch
     - tensorflow
-    - sklearn
+    - scikit-learn
 
 test:
   imports:
