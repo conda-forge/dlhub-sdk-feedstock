@@ -1,5 +1,5 @@
 {% set name = "dlhub-sdk" %}
-{% set version = "1.0.2" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/DLHub-Argonne/dlhub_sdk/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 02dc30137546077bb01c6fef8bd2c8eb9b96780c2444127ef762db206158dad3
+  sha256: cb1fd6345ba3790fbda0fa343be1edc1fb5520636295c83e4bd00065c77f035a
 
 build:
   noarch: python
@@ -27,7 +27,10 @@ requirements:
     - python >=3.4
     - requests >=2.24.0
     - numpy
-    - aws-xray-sdk <0.96,>=0.93  # for moto backwards-compatibility 
+    - aws-xray-sdk <0.96,>=0.93  # for moto backwards-compatibility
+    - pytorch
+    - tensorflow
+    - scikit-learn
 
 test:
   imports:
