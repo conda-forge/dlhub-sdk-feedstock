@@ -1,11 +1,11 @@
-About dlhub-sdk
-===============
+About dlhub-sdk-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dlhub-sdk-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/DLHub-Argonne/dlhub_sdk
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dlhub-sdk-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python interface and utilities for DLHub
 
