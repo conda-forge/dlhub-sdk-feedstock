@@ -1,5 +1,5 @@
 {% set name = "dlhub-sdk" %}
-{% set version = "2.0.3" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/DLHub-Argonne/dlhub_sdk/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 081999ae23aaf84df9a231ca954b4b01cb54ba450308d66cbbb44a84e8daf632
+  sha256: d20d2f653f543ee7b344e5c64c78835ef496faa41ef71975e388babef0ad9cf3
 
 build:
   noarch: python
@@ -19,18 +19,14 @@ requirements:
     - pip
     - python >=3.4
   run:
-    - funcx >=0.3.6
-    - globus-sdk <4,>=3
-    - jsonschema >=3.2.0
-    - mdf_toolbox >=0.5.4
-    - pydantic
     - python >=3.4
+    - globus-sdk <4,>=3
     - requests >=2.24.0
+    - mdf_toolbox >=0.5.4
+    - jsonschema >=3.2.0
+    - globus-compute-sdk >=2.0.0
+    - pydantic
     - numpy
-    - aws-xray-sdk <0.96,>=0.93  # for moto backwards-compatibility
-    - pytorch
-    - tensorflow
-    - scikit-learn
     - pygithub
 
 test:
