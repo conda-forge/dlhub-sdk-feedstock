@@ -32,6 +32,7 @@ requirements:
     - tensorflow
     - scikit-learn
     - pygithub
+    - globus-compute-sdk
 
 test:
   imports:
