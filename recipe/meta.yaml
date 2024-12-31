@@ -12,14 +12,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.4
+    - python {{ python_min }}
   run:
-    - python >=3.4
+    - python >={{ python_min }}
     - globus-sdk <4,>=3
     - requests >=2.24.0
     - mdf_toolbox >=0.5.4
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/DLHub-Argonne/dlhub_sdk
